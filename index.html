@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="30">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="imagem/png" href="../img/icone.png" />
+    <title>Document</title>
+    <style>
+        *{margin: 0; padding: 0;text-decoration: 0;}
+        body{
+           background-image: url("amogtela.gif"); 
+           
+           background-position-x: center;
+           background-size: auto;
+        }
+        header img{
+            width: 225px;
+            height: 60px;
+            display: flex;
+            margin:auto;
+        
+        }
+        
+        .conterc{
+            width: 225px;
+            height:50px;
+            display: flex;
+            flex-direction:column;
+            position: fixed;
+            position: fixed;
+
+margin: 5% auto; /* Will not center vertically and won't work in IE6/7. */
+left: 0;
+right: 0;
+
+            
+            
+        }
+        button{
+            outline: none;
+        }
+        .botoes{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        .botoes2{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        .botoes button{
+            width: 185px;
+            height: 30px;
+            border: solid 2px white;
+            background: inherit;
+            color: white;
+            margin-right: 10px;
+            border-radius: 5px;
+            font-size: 25px;
+        }
+        .botoes2 button{
+            width: 185px;
+            height: 20px;
+            border: solid 2px white;
+            background: inherit;
+            color: white;
+            margin-top: 10px;
+            margin-right: 10px;
+            border-radius: 5px;
+        }
+        .botoesB{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-content: center;
+        }
+        .botoesB i{
+           
+            margin-top: 10px;
+        }
+        .center{
+            background: white;
+            border-radius: 100%;
+            width: 35px;
+            height: 35px;
+            justify-content: center;
+            align-content: center;
+            display: flex;
+            border: solid 2px rgb(170, 170, 170);
+           
+           
+        }
+        header .momoboxS2 button{
+            background-color:inherit;
+            border-left: inherit;
+            border-color: lawngreen;
+            width: 60px;
+            height: 70px;
+            display: flex;
+            flex-direction: column;
+            outline: none;
+        }
+        .momoboxS2 img{
+            width: 45px;
+            height: 45px;
+        }
+        p{
+            color: white;
+        }
+        .acount{
+            width: 300px;
+            height: 220px;
+            background: black;
+            margin: 0 auto;
+            position: fixed;
+
+margin: 2% auto; /* Will not center vertically and won't work in IE6/7. */
+left: 0;
+right: 0;
+            border: solid 2px white;
+            text-align: center;
+            display: none;
+            z-index: 99;
+        }.acount button{
+            width: 90px;
+            height: 30px;
+            margin-top: 10px;
+            background: inherit;
+            color: white;
+            border: solid 2px white;
+            outline: none;
+            border-radius: 7px;
+
+        }
+        h3{
+            color: white;
+            font-size: 2em;
+        }
+        .usar img{
+            width: 50px;
+            height: 50px;
+            background: grey;
+            padding: 3px;
+            border: solid 2px white;
+            border-radius: 10px;
+        }
+        .usar{
+            width: 230px;
+            height: 120px;
+            border-radius: 12px;
+            border: solid 3px white;
+            display: flex;
+            margin: 0 auto;
+            margin-top: 10px;
+            background: url("bg.jpg");
+        }
+        .descer{
+            display: flex;
+            flex-direction: row;
+            margin-top: auto;
+            margin-bottom: auto;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .gira{
+            width: 100%;
+            height: auto;
+            position: fixed;
+           
+        }
+        .gira img{
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+    <script>
+        function fechar(){
+            var n = document.getElementById("fechar");
+            var r= document.getElementById("conta");
+                if(n.style.display == "block" ){
+                    n.style.display ="none";
+                    r.style.display ="block";
+                }else{
+                    n.style.display="none";
+                    r.style.display ="block";
+                }
+            }
+            function abrir(){
+            var n = document.getElementById("fechar");
+            var r= document.getElementById("conta");
+                if(n.style.display == "none" ){
+                    n.style.display ="block";
+                    r.style.display = "none";
+
+                }else{
+                    n.style.display="block";
+                    r.style.display ="none";
+                }
+            }
+        
+    </script>
+</head>
+<body>
+    <header><img src="among-us-logo-png-01.png" alt="">
+    <div class="momoboxS2" id="conta">
+        <button onclick="abrir()"><img src="red.png" alt=""><p>account</p></button>
+        
+    </div>
+    </header>
+    <main>
+       <div class="conterc">
+           <div class="botoes">
+               <button>LOCAL</button>
+                <button>ONLINE</button>
+           </div>
+           <div class="botoes2">
+                <button>HOW TO PLAY</button>
+                <button>FREEPLAY</button>
+           </div>
+           <div class="botoesB">
+               <div class="center">
+            <i class="fa fa-bullhorn" aria-hidden="true"></i>
+        </div>
+        <div class="center">
+            <i class="fa fa-cog" aria-hidden="true"></i>
+        </div>
+            <div class="center">
+            <i class="fa fa-users" aria-hidden="true"></i>
+        </div>
+            <div class="center">
+            <i class="fa fa-signal" aria-hidden="true"></i>
+        </div>
+            <div class="center">
+            <i class="fa fa-money" aria-hidden="true"></i>
+        </div>
+            
+           </div>
+       </div>
+
+       <div class="acount" id="fechar">
+      
+        <h3>account info <a href="javascript:void(0);" onclick="fechar()" > X</a></h3>
+        <div class="contaM" i>
+            <div class="usar">
+                <div class="descer">
+                <img src="user.png" alt="">
+                <div class="baixo">
+                <h5>USERNAME</h5>
+                   
+                <h6>Jollyrat</h6>
+            
+            </div>
+            </div>
+            </div>
+            <button>Play as Guest</button>
+             <button>Go Offline</button>
+             <button>Change Name</button>
+        </div>
+       </div>
+       <div class="gira">
+           <img src="rotate.gif" alt="">
+       </div>
+    </main>
+    <footer></footer>
+</body>
+</html>
